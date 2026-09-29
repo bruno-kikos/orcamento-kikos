@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +9,13 @@
 
 <style>
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     background:#070b12;
     color:white;
     font-family:Arial,sans-serif;
@@ -17,11 +23,12 @@ body{
 
 .topo{
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
 }
 
 .foto{
     width:320px;
+    max-width:90%;
     border-radius:20px;
     border:4px solid #ff3434;
 }
@@ -33,101 +40,17 @@ h1{
 }
 
 h2{
-    color:white;
+    margin-top:10px;
     font-size:28px;
+}
+
+.descricao{
+    max-width:800px;
+    margin:20px auto;
+    line-height:1.7;
+    font-size:18px;
 }
 
 .btn{
     display:inline-block;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:18px 40px;
-    border-radius:12px;
-    margin-top:20px;
-    font-size:22px;
-    font-weight:bold;
-    box-shadow:0 0 15px rgba(37,211,102,.5);
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
-}
-
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:40px;
-}
-
-.card{
-    background:#111827;
-    width:250px;
-    padding:20px;
-    border-radius:15px;
-}
-
-.card h3{
-    color:#ff3434;
-}
-
-p{
-    line-height:1.6;
-    max-width:800px;
-    margin:auto;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="topo">
-
-<img src="bruno.jpg.jpeg" class="foto">
-
-<h1>Bruno Kikos Fitness</h1>
-
-<h2>Consultor Comercial Kikos | Recife - PE</h2>
-
-<p>
-Especialista em implantação de salas fitness para
-academias, condomínios, construtoras, hotéis e studios.
-<br><br>
-Atendimento consultivo desde o planejamento até a entrega
-dos equipamentos profissionais Kikos Fitness.
-</p>
-
-<a class="btn"
-href="https://wa.me/5581991914430?text=Olá%20Bruno!%20Vi%20seu%20site%20e%20gostaria%20de%20receber%20um%20orçamento."
-target="_blank">
-📲 Solicitarrds">
-
-<div class="card">
-<h3>Academias</h3>
-<p>Projetos completos para academias de todos os portes.</p>
-</div>
-
-<div class="card">
-<h3>Condomínios</h3>
-<p>Salas fitness para áreas comuns e empreendimentos residenciais.</p>
-</div>
-
-<div class="card">
-<h3>Construtoras</h3>
-<p>Equipamentos para áreas de lazer e espaços fitness.</p>
-</div>
-
-<div class="card">
-<h3>Studios</h3>
-<p>Montagem personalizada para studios e centros de treinamento.</p>
-</div>
-
-</div>
-
-</body>
-</
+   
