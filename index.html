@@ -7,7 +7,33 @@
 <title>Bruno Kikos Fitness</title>
 
 <style>
-
+.formulario{
+max-width:600px;
+margin:30px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+ 
+.formulario input,
+.formulario select{
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+ 
+.formulario button{
+background:#25D366;
+color:white;
+border:none;
+padding:18px;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+}
+    
 *{
     margin:0;
     padding:0;
@@ -123,9 +149,29 @@ especificação dos equipamentos e montagem do projeto
 até a entrega dos equipamentos profissionais Kikos Fitness.
 </p>
  
-<a class="btn" href="https://wa.me/5581991914430" target="_blank">
+<div class="formulario">
+
+<input type="text" id="nome" placeholder="Seu nome">
+
+<input type="text" id="empresa" placeholder="Empresa ou Condomínio">
+
+<input type="text" id="telefone" placeholder="Telefone">
+
+<input type="text" id="cidade" placeholder="Cidade">
+
+<select id="segmento">
+<option>Academia</option>
+<option>Condomínio</option>
+<option>Construtora</option>
+<option>Studio</option>
+<option>Hotel</option>
+</select>
+
+<button onclick="enviarWhatsapp()">
 📲 Solicitar Orçamento
-</a>
+</button>
+
+</div>
  
 </div>
  
@@ -156,7 +202,43 @@ até a entrega dos equipamentos profissionais Kikos Fitness.
 <div class="rodape">
 Kikos Fitness • Atendimento Comercial Recife e Região
 </div>
- 
+
+
+<script>
+
+function enviarWhatsapp(){
+
+let nome = document.getElementById("nome").value;
+let empresa = document.getElementById("empresa").value;
+let telefone = document.getElementById("telefone").value;
+let cidade = document.getElementById("cidade").value;
+let segmento = document.getElementById("segmento").value;
+
+let mensagem =
+`Olá Bruno!
+
+Nome: ${nome}
+
+Empresa: ${empresa}
+
+Telefone: ${telefone}
+
+Cidade: ${cidade}
+
+Segmento: ${segmento}
+
+Gostaria de receber um orçamento para meu projeto fitness.`;
+
+let url =
+"https://wa.me/5581991914430?text=" +
+encodeURIComponent(mensagem);
+
+window.open(url,'_blank');
+
+}
+
+</script>
+    
 </body>
 
 </body>
