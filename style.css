@@ -1,1 +1,70 @@
+body{
+    margin:0;
+    background:#070b12;
+    color:white;
+    font-family:Arial,sans-serif;
+}
 
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.menu{
+    width:220px;
+    background:#111827;
+    padding:20px;
+}
+
+.menu h2{
+    color:#ff3434;
+}
+
+.menu button{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    background:#ff3434;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.produtos{
+    flex:1;
+    padding:20px;
+}
+
+.card-produto{
+    background:#111827;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:12px;
+}
+
+.card-produto button{
+    background:#ff3434;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.pedido{
+    width:300px;
+    background:#111827;
+    padding:20px;
+}
+
+.pedido button{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    background:#25D366;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
