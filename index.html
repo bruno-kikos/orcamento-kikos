@@ -59,15 +59,42 @@ h2{
     gap:18px;
 }
 
+.formulario{
+    max-width:700px;
+    width:95%;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
 .formulario input,
 .formulario select{
     width:100%;
-    padding:18px;
+    height:65px;
+    padding:0 20px;
     border:none;
     border-radius:12px;
-    font-size:18px;
+    font-size:20px;
     background:#ffffff;
     color:#000000;
+}
+
+.formulario input::placeholder{
+    color:#666;
+    font-size:18px;
+}
+
+.formulario button{
+    height:65px;
+    background:#25D366;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+
 }
 
 .formulario button{
