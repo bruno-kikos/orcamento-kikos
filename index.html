@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,7 @@
 <title>Bruno Kikos Fitness</title>
 
 <style>
-.formulario{
-max-width:600px;
-margin:30px auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
- 
-.formulario input,
-.formulario select{
-padding:15px;
-border:none;
-border-radius:10px;
-font-size:16px;
-}
- 
-.formulario button{
-background:#25D366;
-color:white;
-border:none;
-padding:18px;
-border-radius:12px;
-font-size:20px;
-font-weight:bold;
-cursor:pointer;
-}
-    
+
 *{
     margin:0;
     padding:0;
@@ -72,25 +47,43 @@ h2{
 .descricao{
     max-width:800px;
     margin:25px auto;
-    line-height:1.7;
+    line-height:1.8;
     padding:0 20px;
 }
 
-.btn{
-    display:inline-block;
+.formulario{
+    max-width:700px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.formulario input,
+.formulario select{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    background:#ffffff;
+    color:#000000;
+}
+
+.formulario button{
     background:#25D366;
-    color:#fff;
-    text-decoration:none;
-    padding:18px 40px;
+    color:white;
+    border:none;
+    padding:20px;
     border-radius:12px;
     font-size:22px;
     font-weight:bold;
-    margin-top:20px;
+    cursor:pointer;
     transition:0.3s;
 }
 
-.btn:hover{
-    transform:scale(1.05);
+.formulario button:hover{
+    transform:scale(1.03);
 }
 
 .cards{
@@ -121,7 +114,7 @@ h2{
 .rodape{
     text-align:center;
     color:#999;
-    padding:30px;
+    padding:40px 20px;
 }
 
 </style>
@@ -129,35 +122,35 @@ h2{
 </head>
 
 <body>
- 
+
 <div class="topo">
- 
+
 <img src="bruno.jpg.png" class="foto">
- 
-<h1>Bruno Kikos Fitness</h1>
- 
-<h2>Consultor Comercial Kikos | Recife - PE</h2>
- 
+
+<h1>Bruno Lacerda</h1>
+
+<h2>Consultor Comercial Kikos Fitness | Recife - PE</h2>
+
 <p class="descricao">
 Especialista em implantação de salas fitness para academias,
 condomínios, construtoras, hotéis e studios.
- 
+
 <br><br>
- 
+
 Atendimento consultivo desde o planejamento,
-especificação dos equipamentos e montagem do projeto
-até a entrega dos equipamentos profissionais Kikos Fitness.
+especificação dos equipamentos, montagem do projeto
+e entrega dos equipamentos profissionais Kikos Fitness.
 </p>
- 
+
 <div class="formulario">
 
-<input type="text" id="nome" placeholder="Seu nome">
+<input type="text" id="nome" placeholder="Nome completo">
 
-<input type="text" id="empresa" placeholder="Empresa ou Condomínio">
+<input type="text" id="empresa" placeholder="Empresa, Condomínio ou Academia">
 
-<input type="text" id="telefone" placeholder="Telefone">
+<input type="text" id="telefone" placeholder="WhatsApp com DDD">
 
-<input type="text" id="cidade" placeholder="Cidade">
+<input type="text" id="cidade" placeholder="Cidade / Estado">
 
 <select id="segmento">
 <option>Academia</option>
@@ -172,37 +165,36 @@ até a entrega dos equipamentos profissionais Kikos Fitness.
 </button>
 
 </div>
- 
+
 </div>
- 
+
 <div class="cards">
- 
+
 <div class="card">
 <h3>Academias</h3>
 <p>Projetos completos para academias de todos os portes.</p>
 </div>
- 
+
 <div class="card">
 <h3>Condomínios</h3>
 <p>Salas fitness para áreas comuns e empreendimentos residenciais.</p>
 </div>
- 
+
 <div class="card">
 <h3>Construtoras</h3>
 <p>Equipamentos para áreas de lazer e espaços fitness.</p>
 </div>
- 
+
 <div class="card">
 <h3>Studios</h3>
 <p>Montagem personalizada para studios e centros de treinamento.</p>
 </div>
- 
+
 </div>
- 
+
 <div class="rodape">
 Kikos Fitness • Atendimento Comercial Recife e Região
 </div>
-
 
 <script>
 
@@ -227,19 +219,17 @@ Cidade: ${cidade}
 
 Segmento: ${segmento}
 
-Gostaria de receber um orçamento para meu projeto fitness.`;
+Gostaria de receber uma proposta para meu projeto fitness.`;
 
 let url =
 "https://wa.me/5581991914430?text=" +
 encodeURIComponent(mensagem);
 
-window.open(url,'_blank');
+window.open(url, "_blank");
 
 }
 
 </script>
-    
-</body>
 
 </body>
 </html>
