@@ -52,13 +52,12 @@ h2{
 }
 
 .formulario{
-max-width:900px;
-width:95%;
-margin:50px auto;
-display:flex;
-flex-direction:column;
-gap:20px;
-
+    max-width:900px;
+    width:95%;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 .formulario input,
@@ -93,13 +92,13 @@ gap:20px;
 
 .formulario button:hover{
     transform:scale(1.03);
-
 }
 
-<h2 style="margin-top:60px;color:#ff3434;">
-Segmentos Atendidos
-</h2>
-    
+.titulo-secao{
+    text-align:center;
+    color:#ff3434;
+    margin-top:60px;
+    margin-bottom:20px;
 }
 
 .cards{
@@ -131,6 +130,29 @@ Segmentos Atendidos
     text-align:center;
     color:#999;
     padding:40px 20px;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    .foto{
+        width:280px;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario button{
+        height:70px;
+        font-size:18px;
+    }
+
 }
 
 </style>
@@ -183,26 +205,40 @@ e entrega dos equipamentos profissionais Kikos Fitness.
 
 </div>
 
+</div>
+
+<h2 class="titulo-secao">
+Segmentos Atendidos
+</h2>
+
 <div class="cards">
 
 <div class="card">
 <h3>Academias</h3>
-<p>Projetos completos para academias de todos os portes.</p>
+<p>
+Projetos completos para academias de todos os portes.
+</p>
 </div>
 
 <div class="card">
 <h3>Condomínios</h3>
-<p>Salas fitness para áreas comuns e empreendimentos residenciais.</p>
+<p>
+Salas fitness para áreas comuns e empreendimentos residenciais.
+</p>
 </div>
 
 <div class="card">
 <h3>Construtoras</h3>
-<p>Equipamentos para áreas de lazer e espaços fitness.</p>
+<p>
+Equipamentos para áreas de lazer e espaços fitness.
+</p>
 </div>
 
 <div class="card">
 <h3>Studios</h3>
-<p>Montagem personalizada para studios e centros de treinamento.</p>
+<p>
+Montagem personalizada para studios e centros de treinamento.
+</p>
 </div>
 
 </div>
