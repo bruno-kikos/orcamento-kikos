@@ -6,10 +6,19 @@
     text-decoration:none;
     padding:12px;
     border-radius:10px;
+    font-size:16px;
     font-weight:bold;
-    transition:.3s;
 }
 
 .btn-card:hover{
     transform:scale(1.03);
+}
+
+.card{
+    width:320px;
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
 }
