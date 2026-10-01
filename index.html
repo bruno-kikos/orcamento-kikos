@@ -192,4 +192,117 @@ condomínios, construtoras, hotéis, studios ou residências.
 
 Receba orientação especializada para selecionar os
 equipamentos Kikos ideais para seu projeto, com atendimento
-consultivo desde o planejamento até a entrega
+consultivo desde o planejamento até a entrega.
+
+</p>
+
+<div class="formulario">
+
+<input type="text" id="nome" placeholder="👤 Nome completo">
+
+<input type="text" id="empresa" placeholder="🏢 Empresa, Condomínio ou Academia">
+
+<input type="text" id="telefone" placeholder="📱 WhatsApp com DDD">
+
+<input type="text" id="cidade" placeholder="📍 Cidade / Estado">
+
+<select id="segmento">
+<option>Selecione o segmento</option>
+<option>Academia</option>
+<option>Condomínio</option>
+<option>Construtora</option>
+<option>Studio</option>
+<option>Hotel</option>
+<option>Residência</option>
+</select>
+
+<button onclick="enviarWhatsapp()">
+📲 Solicitar Orçamento
+</button>
+
+</div>
+
+</div>
+
+<h2 class="titulo-secao">
+Qual é o Seu Projeto?
+</h2>
+
+<p class="subtitulo">
+Selecione abaixo a opção que melhor representa sua necessidade e receba atendimento especializado para o seu projeto.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏋️ ORÇAMENTO PARA RENOVAR MINHA ACADEMIA</h3>
+<p>Desejo renovar, ampliar ou substituir equipamentos da minha academia.</p>
+</div>
+
+<div class="card">
+<h3>🚀 ABRIR UMA ACADEMIA OU STUDIO</h3>
+<p>Sou empreendedor e desejo montar uma academia, studio ou centro de treinamento.</p>
+</div>
+
+<div class="card">
+<h3>🏢 SALA FITNESS PARA CONDOMÍNIO</h3>
+<p>Sou síndico ou administrador e desejo implantar ou renovar a sala fitness do condomínio.</p>
+</div>
+
+<div class="card">
+<h3>🏗️ EQUIPAR O ESPAÇO FITNESS DO MEU EMPREENDIMENTO</h3>
+<p>Desejo incluir equipamentos Kikos Fitness em meu empreendimento.</p>
+</div>
+
+<div class="card">
+<h3>🏠 ACADEMIA RESIDENCIAL</h3>
+<p>Sou pessoa física e desejo montar ou complementar minha academia residencial.</p>
+</div>
+
+<div class="card">
+<h3>🏨 EQUIPAMENTOS PARA HOTÉIS, CLUBES E EMPRESAS</h3>
+<p>Desejo equipar hotéis, clubes, empresas e espaços corporativos.</p>
+</div>
+
+</div>
+
+<div class="rodape">
+Kikos Fitness • Atendimento Comercial para todo Brasil
+</div>
+
+<script>
+
+function enviarWhatsapp(){
+
+let nome = document.getElementById("nome").value;
+let empresa = document.getElementById("empresa").value;
+let telefone = document.getElementById("telefone").value;
+let cidade = document.getElementById("cidade").value;
+let segmento = document.getElementById("segmento").value;
+
+let mensagem =
+`Olá Bruno!
+
+Nome: ${nome}
+
+Empresa: ${empresa}
+
+Telefone: ${telefone}
+
+Cidade: ${cidade}
+
+Segmento: ${segmento}
+
+Gostaria de receber uma proposta para meu projeto fitness.`;
+
+let url =
+"https://wa.me/5581991914430?text=" + encodeURIComponent(mensagem);
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</body>
+</html>
