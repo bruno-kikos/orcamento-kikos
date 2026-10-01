@@ -1,70 +1,195 @@
-<div style="text-align:center;margin-top:60px;margin-bottom:30px;">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <h2 style="
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bruno Kikos Fitness</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#070b12;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.topo{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+.foto{
+    width:320px;
+    max-width:90%;
+    border-radius:20px;
+    border:4px solid #ff3434;
+}
+
+h1{
     color:#ff3434;
+    font-size:42px;
+    margin-top:20px;
+}
+
+h2{
+    color:#ffffff;
+}
+
+.descricao{
+    max-width:800px;
+    margin:25px auto;
+    line-height:1.8;
+    padding:0 20px;
+}
+
+.formulario{
+    max-width:900px;
+    width:95%;
+    margin:50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.formulario input,
+.formulario select{
+    width:100%;
+    height:80px;
+    padding:0 25px;
+    border:none;
+    border-radius:15px;
+    font-size:20px;
+}
+
+.formulario button{
+    width:100%;
+    height:80px;
+    background:#25D366;
+    color:white;
+    border:none;
+    border-radius:15px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.titulo-secao{
+    text-align:center;
+    color:#ff3434;
+    margin-top:70px;
+    margin-bottom:15px;
     font-size:32px;
     font-weight:bold;
-    margin-bottom:15px;
-    ">
-    Qual é o Seu Projeto?
-    </h2>
+}
 
-    <p style="
+.subtitulo{
+    text-align:center;
     color:#d4d4d4;
-    font-size:18px;
     max-width:700px;
-    margin:auto;
+    margin:0 auto 40px auto;
     line-height:1.7;
-    ">
-    Selecione abaixo a opção que melhor representa sua necessidade
-    e receba atendimento especializado para o seu projeto.
-    </p>
+}
 
-</div>
+.cards{
+    width:95%;
+    max-width:900px;
+    margin:0 auto 50px auto;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
 
-<div class="cards">
+.card{
+    width:100%;
+    background:#111827;
+    border:2px solid #ff3434;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:all .3s ease;
+}
 
-<div class="card">
-<h3>🏋️ ORÇAMENTO PARA RENOVAR MINHA ACADEMIA</h3>
-<p>
-Desejo renovar, ampliar ou substituir equipamentos da minha academia.
-</p>
-</div>
+.card:hover{
+    background:#ff3434;
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(255,52,52,.35);
+}
 
-<div class="card">
-<h3>🚀 ABRIR UMA ACADEMIA OU STUDIO</h3>
-<p>
-Sou empreendedor e desejo montar uma academia, studio ou centro de treinamento.
-</p>
-</div>
+.card h3{
+    color:#ffffff;
+    font-size:22px;
+    margin-bottom:12px;
+}
 
-<div class="card">
-<h3>🏢 SALA FITNESS PARA CONDOMÍNIO</h3>
-<p>
-Sou síndico ou administrador e desejo implantar ou renovar a sala fitness do condomínio.
-</p>
-</div>
+.card p{
+    color:#d4d4d4;
+    font-size:16px;
+    line-height:1.6;
+}
 
-<div class="card">
-<h3>🏗️ EQUIPAR O ESPAÇO FITNESS DO MEU EMPREENDIMENTO</h3>
-<p>
-Desejo incluir equipamentos Kikos Fitness em meu empreendimento.
-</p>
-</div>
+.card:hover h3,
+.card:hover p{
+    color:#ffffff;
+}
 
-<div class="card">
-<h3>🏠 ACADEMIA RESIDENCIAL</h3>
-<p>
-Sou pessoa física e desejo montar ou complementar minha academia residencial.
-</p>
-</div>
+.rodape{
+    text-align:center;
+    color:#999;
+    padding:40px 20px;
+}
 
-<div class="card">
-<h3>🏨 EQUIPAMENTOS PARA HOTÉIS, CLUBES E EMPRESAS</h3>
-<p>
-Desejo equipar hotéis, clubes, empresas e espaços corporativos.
-</p>
-</div>
+@media(max-width:768px){
 
-</div>
-`
+    .foto{
+        width:260px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario button{
+        height:70px;
+        font-size:18px;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topo">
+
+<img src="bruno.jpg.png" class="foto">
+
+<h1>Bruno Lacerda</h1>
+
+<h2>Consultor Comercial Kikos Fitness | Recife - PE</h2>
+
+<p class="descricao">
+
+Solicite um orçamento personalizado para academias,
+condomínios, construtoras, hotéis, studios ou residências.
+
+<br><br>
+
+Receba orientação especializada para selecionar os
+equipamentos Kikos ideais para seu projeto, com atendimento
+consultivo desde o planejamento até a entrega
