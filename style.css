@@ -1,3 +1,15 @@
-body{
-    background:red;
+.btn-card{
+    display:block;
+    margin-top:15px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-card:hover{
+    transform:scale(1.03);
 }
