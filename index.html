@@ -40,7 +40,8 @@ h1{
 }
 
 h2{
-    color:#ffffff;
+    color:white;
+    margin-top:10px;
 }
 
 .descricao{
@@ -108,6 +109,8 @@ h2{
 }
 
 .card{
+    display:block;
+    text-decoration:none;
     width:100%;
     background:#111827;
     border:2px solid #ff3434;
@@ -124,7 +127,7 @@ h2{
 }
 
 .card h3{
-    color:#ffffff;
+    color:white;
     font-size:22px;
     margin-bottom:12px;
 }
@@ -137,7 +140,7 @@ h2{
 
 .card:hover h3,
 .card:hover p{
-    color:#ffffff;
+    color:white;
 }
 
 .rodape{
@@ -190,9 +193,8 @@ condomínios, construtoras, hotéis, studios ou residências.
 
 <br><br>
 
-Receba orientação especializada para selecionar os
-equipamentos Kikos ideais para seu projeto, com atendimento
-consultivo desde o planejamento até a entrega.
+Receba orientação especializada para selecionar os equipamentos
+Kikos ideais para seu projeto.
 
 </p>
 
@@ -229,40 +231,69 @@ Qual é o Seu Projeto?
 </h2>
 
 <p class="subtitulo">
-Selecione abaixo a opção que melhor representa sua necessidade e receba atendimento especializado para o seu projeto.
+Selecione abaixo a opção que melhor representa sua necessidade.
 </p>
 
 <div class="cards">
 
-<div class="card">
+https://wa.me/5581991914430?text=Olá%20Bruno!%20Vim%20através%20do%20seu%20Instagram%20e%20gostaria%20de%20receber%20um%20orçamento%20para%20renovar%20minha%20academia.
+
 <h3>🏋️ ORÇAMENTO PARA RENOVAR MINHA ACADEMIA</h3>
-<p>Desejo renovar, ampliar ou substituir equipamentos da minha academia.</p>
-</div>
 
-<div class="card">
+<p>
+Desejo renovar, ampliar ou substituir equipamentos da minha academia.
+</p>
+
+</a>
+
+https://wa.me/5581991914430?text=Olá%20Bruno!%20Vim%20através%20do%20seu%20Instagram%20e%20gostaria%20de%20montar%20uma%20academia%20ou%20studio.
+
 <h3>🚀 ABRIR UMA ACADEMIA OU STUDIO</h3>
-<p>Sou empreendedor e desejo montar uma academia, studio ou centro de treinamento.</p>
-</div>
 
-<div class="card">
+<p>
+Sou empreendedor e desejo montar uma academia ou studio.
+</p>
+
+</a>
+
+<a class="card" target="_blank"
+href="https://wa.me/5581991914430o%20seu%20Instagram%20e%20gostaria%20de%20montar%20ou%20renovar%20a%20sala%20fitness%20do%20meu%20condomínio.
+
 <h3>🏢 SALA FITNESS PARA CONDOMÍNIO</h3>
-<p>Sou síndico ou administrador e desejo implantar ou renovar a sala fitness do condomínio.</p>
-</div>
 
-<div class="card">
+<p>
+Sou síndico ou administrador e desejo implantar ou renovar a sala fitness do condomínio.
+</p>
+
+</a>
+
+<a class="card" target="_blank"
+href="https://wa.me/5581991914430?text=Olá%20Bruno!%20Vim%20através%20do%20seu%20Instagram%20e%20gostaria%20de%20equipar%20o%ndimento.
+
 <h3>🏗️ EQUIPAR O ESPAÇO FITNESS DO MEU EMPREENDIMENTO</h3>
-<p>Desejo incluir equipamentos Kikos Fitness em meu empreendimento.</p>
-</div>
 
-<div class="card">
-<h3>🏠 ACADEMIA RESIDENCIAL</h3>
-<p>Sou pessoa física e desejo montar ou complementar minha academia residencial.</p>
-</div>
+<p>
+Desejo incluir equipamentos Kikos Fitness em meu empreendimento.
+</p>
 
-<div class="card">
-<h3>🏨 EQUIPAMENTOS PARA HOTÉIS, CLUBES E EMPRESAS</h3>
-<p>Desejo equipar hotéis, clubes, empresas e espaços corporativos.</p>
-</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://wa.me/5581991914430?text=Olá%20Bruno!%20Vim%20através%20do%20seu%20Instagram%20e%20gostaria%20de%20montar%20uma%20academia%20residencial.">
+
+<h3essoa física e desejo montar ou complementar minha academia residencial.
+</p>
+
+</a>
+
+<a class="card" target="_blank"
+href="https://wa.me/5581991914430?text=Olá%20Bruno!%20Vim%20através%20do%20seu%20Instagram%20e%20gostaria%20de%20equipar%20hotéis,%20clubes%20ou%20empresas.">
+
+<h3>🏨 EQUIPAMENT<p>
+Desejo equipar hotéis, clubes, empresas e espaços corporativos.
+</p>
+
+</a>
 
 </div>
 
@@ -296,7 +327,8 @@ Segmento: ${segmento}
 Gostaria de receber uma proposta para meu projeto fitness.`;
 
 let url =
-"https://wa.me/5581991914430?text=" + encodeURIComponent(mensagem);
+"https://wa.me/5581991914430?text=" +
+encodeURIComponent(mensagem);
 
 window.open(url,"_blank");
 
