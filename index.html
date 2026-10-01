@@ -18,7 +18,7 @@
 body{
     background:#070b12;
     color:white;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 .topo{
@@ -87,68 +87,59 @@ h2{
     font-size:24px;
     font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
-}
-
-.formulario button:hover{
-    transform:scale(1.03);
 }
 
 .titulo-secao{
-text-align:center;
-color:#ff3434;
-margin-top:70px;
-margin-bottom:35px;
-font-size:32px;
-font-weight:bold;
-
+    text-align:center;
+    color:#ff3434;
+    margin-top:70px;
+    margin-bottom:35px;
+    font-size:32px;
+    font-weight:bold;
 }
 
 .cards{
+    width:95%;
+    max-width:900px;
+    margin:0 auto 50px auto;
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:40px 20px;
+    flex-direction:column;
+    gap:15px;
 }
 
 .card{
-width:260px;
-background:#111827;
-padding:25px;
-border-radius:15px;
-text-align:center;
-transition:0.3s;
+    background:#111827;
+    border:2px solid #ff3434;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    background:#151c2b;
 }
 
 .card h3{
-    color:#ff3434;
+    color:white;
+    font-size:20px;
     margin-bottom:10px;
 }
 
 .card p{
+    color:#d5d5d5;
     line-height:1.6;
 }
 
-<p style="text-align:center;color:#ccc;margin-top:30px;">
-Atendimento especializado para projetos fitness em todo o Brasil.
-</p>
-
-}
-
 .rodape{
-width:100%;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:#999;
-padding:40px 20px;
-margin:0 auto;
-font-size:16px;
+    width:100%;
+    text-align:center;
+    color:#999;
+    padding:40px 20px;
+    font-size:16px;
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
     h1{
         font-size:34px;
@@ -186,21 +177,16 @@ font-size:16px;
 <h2>Consultor Comercial Kikos Fitness | Recife - PE</h2>
 
 <p class="descricao">
+
 Solicite um orçamento personalizado para academias,
 condomínios, construtoras, hotéis, studios ou residências.
- 
+
 <br><br>
- 
+
 Receba orientação especializada para selecionar os
 equipamentos Kikos ideais para seu projeto, com atendimento
 consultivo desde o planejamento até a entrega.
-</p>
 
-<br><br>
-
-Atendimento consultivo desde o planejamento,
-especificação dos equipamentos, montagem do projeto
-e entrega dos equipamentos profissionais Kikos Fitness.
 </p>
 
 <div class="formulario">
@@ -220,6 +206,7 @@ e entrega dos equipamentos profissionais Kikos Fitness.
 <option>Construtora</option>
 <option>Studio</option>
 <option>Hotel</option>
+<option>Residência</option>
 </select>
 
 <button onclick="enviarWhatsapp()">
@@ -228,54 +215,96 @@ e entrega dos equipamentos profissionais Kikos Fitness.
 
 </div>
 
+</div>
+
+<h2 class="titulo-secao">
+Como Posso Lhe Ajudar?
+</h2>
+
 <div class="cards">
 
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de fazer um orçamento para renovar minha academia."
-target="_blank">
+<div class="card">
+<h3>🏋️ ORÇAMENTO PARA RENOVAR MINHA ACADEMIA</h3>
+<p>
+Desejo renovar, ampliar ou substituir equipamentos da minha academia.
+</p>
+</div>
 
-🏋️ ORÇAMENTO PARA RENOVAR MINHA ACADEMIA
+<div class="card">
+<h3>🚀 ABRIR UMA ACADEMIA OU STUDIO</h3>
+<p>
+Sou empreendedor e desejo montar uma academia, studio ou centro de treinamento.
+</p>
+</div>
 
-</a>
+<div class="card">
+<h3>🏢 SALA FITNESS PARA CONDOMÍNIO</h3>
+<p>
+Sou síndico ou administrador e desejo implantar ou renovar a sala fitness do condomínio.
+</p>
+</div>
 
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de receber um orçamento para montar uma academia ou studio."
-target="_blank">
+<div class="card">
+<h3>🏗️ PROJETO PARA CONSTRUTORA</h3>
+<p>
+Desejo incluir equipamentos Kikos Fitness em meu empreendimento.
+</p>
+</div>
 
-🚀 SOU EMPREENDEDOR E DESEJO MONTAR UMA ACADEMIA OU STUDIO
+<div class="card">
+<h3>🏠 ACADEMIA RESIDENCIAL</h3>
+<p>
+Sou pessoa física e desejo montar ou complementar minha academia residencial.
+</p>
+</div>
 
-</a>
-
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de implantar ou renovar a sala fitness do meu condomínio."
-target="_blank">
-
-🏢 SOU SÍNDICO E DESEJO MONTAR OU RENOVAR A SALA FITNESS DO MEU CONDOMÍNIO
-
-</a>
-
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de incluir equipamentos Kikos em nosso empreendimento."
-target="_blank">
-
-🏗️ SOU CONSTRUTORA E GOSTARIA DE TER EQUIPAMENTOS KIKOS EM NOSSO PROJETO
-
-</a>
-
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de montar uma academia residencial."
-target="_blank">
-
-🏠 SOU PESSOA FÍSICA E QUERO COMPRAR EQUIPAMENTOS PARA MINHA RESIDÊNCIA
-
-</a>
-
-<a class="btn-ajuda"
-href="https://wa.me/5581991914430?text=Olá Bruno! Vim através do seu Instagram e gostaria de equipar um hotel, clube ou empresa."
-target="_blank">
-
-🏨 SOU HOTEL, CLUBE OU EMPRESA E PRECISO DE EQUIPAMENTOS PROFISSIONAIS
-
-</a>
+<div class="card">
+<h3>🏨 HOTÉIS E EMPRESAS</h3>
+<p>
+Desejo equipar hotéis, clubes, empresas e espaços corporativos.
+</p>
+</div>
 
 </div>
+
+<div class="rodape">
+Kikos Fitness • Atendimento Comercial para todo Brasil
+</div>
+
+<script>
+
+function enviarWhatsapp(){
+
+let nome = document.getElementById("nome").value;
+let empresa = document.getElementById("empresa").value;
+let telefone = document.getElementById("telefone").value;
+let cidade = document.getElementById("cidade").value;
+let segmento = document.getElementById("segmento").value;
+
+let mensagem =
+`Olá Bruno!
+
+Nome: ${nome}
+
+Empresa: ${empresa}
+
+Telefone: ${telefone}
+
+Cidade: ${cidade}
+
+Segmento: ${segmento}
+
+Gostaria de receber uma proposta para meu projeto fitness.`;
+
+let url =
+"https://wa.me/5581991914430?text=" +
+encodeURIComponent(mensagem);
+
+window.open(url, "_blank");
+
+}
+
+</script>
+
+</body>
+</html>
