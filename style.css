@@ -1,13 +1,3 @@
-.cards{
-    width:95%;
-    max-width:900px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-    padding:20px;
-}
-
 .card{
     width:100%;
     background:#111827;
@@ -16,6 +6,13 @@
     border-radius:18px;
     text-align:center;
     transition:all 0.3s ease;
+}
+
+.card:hover{
+    background:#ff3434;
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(255,52,52,.35);
+    cursor:pointer;
 }
 
 .card h3{
@@ -30,14 +27,5 @@
     line-height:1.6;
 }
 
-.card:hover{
-    background:#ff3434;
-    transform:translateY(-4px);
-    cursor:pointer;
-    box-shadow:0 0 25px rgba(255,52,52,.35);
-}
-
 .card:hover h3,
-.card:hover p{
-    color:#ffffff;
-}
+.card:hover
