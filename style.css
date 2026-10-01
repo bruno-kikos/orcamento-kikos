@@ -22,3 +22,32 @@
     text-align:center;
     transition:.3s;
 }
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    max-width:700px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.btn-ajuda{
+    width:100%;
+    background:#111827;
+    color:#ffffff;
+    text-decoration:none;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    border:1px solid #ff3434;
+    transition:0.3s;
+}
+
+.btn-ajuda:hover{
+    background:#ff3434;
+    transform:scale(1.02);
+}
