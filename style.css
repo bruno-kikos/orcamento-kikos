@@ -51,32 +51,3 @@
     background:#ff3434;
     transform:scale(1.02);
 }
-
-.cards{
-    width:95%;
-    max-width:900px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.btn-ajuda{
-    display:block;
-    background:#111827;
-    color:#ffffff;
-    text-decoration:none;
-    padding:22px;
-    border-radius:15px;
-    text-align:center;
-    font-size:18px;
-    font-weight:bold;
-    border:2px solid #ff3434;
-    transition:0.3s;
-}
-
-.btn-ajuda:hover{
-    background:#ff3434;
-    color:white;
-    transform:scale(1.02);
-}
